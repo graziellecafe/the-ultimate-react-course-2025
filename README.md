@@ -14,7 +14,7 @@ const [advice, getAdvice] = useState("");
 
 **useState** é uma função no React que retorna uma matriz. Portanto, como no exemplo, estamos desestruturando a matriz. O primeiro valor temos o estado que chamamos de valor 'advice' e o segundo valor é uma função setter, uma função que utilizamos para atualizar a parte do estado.
 
-Exemplo:
+📎 **Exemplo**:
 
 ```js
 import { useState } from "react";
@@ -35,6 +35,16 @@ export default function App() {
     </div>
   );
 }
+```
+
+**useEffect** utilizamos passando primeiramente uma função que queremos que seja executada no início (por exemplo, a página já iniciar com a função getAdvice sendo mostrada) e o segundo valor uma matriz de dependência.
+
+📎 **Exemplo**:
+
+```js
+useEffect(function () {
+  getAdvice();
+}, []);
 ```
 
 ## 01 - Revision Javascript
@@ -74,3 +84,10 @@ const [primeiro, , terceiro] = numeros;
 console.log(primeiro); // 10
 console.log(terceiro); // 30
 ```
+
+## 02 - Working with components, Props and JSX
+
+- Criando e reutilizando componentes
+- Renderizando listas
+- Renderização condicional
+- Comece a escrever código por conta própria
